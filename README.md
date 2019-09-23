@@ -23,7 +23,7 @@ pip3 show servo_pi
 ```
 
 If this was installed correctly, the next step is to wire your servo motor. Although all servo motors have a slightly different configuration, any PWM Analog Servo requires a power supply, ground, and a data pin. Using the datasheet for your particular servo and the Raspberry Pi GPIO shown below, connect your servo and remember the pin number for the data pin (the board pin not the GPIO pin!).
-![Raspberry Pi 3 B+ GPIO](https://github.com/kcydesu/servo-pi/picutures/introduction-to-raspberry-pi-3-b-plus-2.png)
+![Raspberry Pi 3 B+ GPIO](https://github.com/kcydesu/servo-pi/blob/master/pictures/introduction-to-raspberry-pi-3-b-plus-2.png)
 
 After connecting your servo, the software part of this project is straightforward.
 
