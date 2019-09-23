@@ -1,8 +1,9 @@
 # servo-pi
 This is a package that makes interfacing with servo motors using a Raspberry Pi straightforward.
+
 Dependencies
--RPi.GPIO
--time
+  -RPi.GPIO
+  -time
 
 ## Installation
 To install, start with cloning this repository. 
