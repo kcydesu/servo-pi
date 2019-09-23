@@ -29,7 +29,7 @@ class Servo:
         #   val - Position to set the servo to, a value between 0 - 180
 
         duty = float(val) / 10.0 + 2.5
+        self.pwm.ChangeDutyCycle(90)
+        time.sleep(1)
         self.pwm.ChangeDutyCycle(duty)
-        time.sleep(0.5)
-        self.pwm.ChangeDutyCycle(duty)
-        time.sleep(0.5)
+        time.sleep(1)
