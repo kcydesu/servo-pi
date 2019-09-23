@@ -1,4 +1,4 @@
-from servo_pi.servo_pi.servo import Servo
+from servo_pi.servo import Servo
 
 
 def main():
