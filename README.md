@@ -2,10 +2,14 @@
 This is a package that makes interfacing with servo motors using a Raspberry Pi straightforward.
 
 ## Installation
-To install, entere terminal and get install from https://test.pypi.org/
+To install, start with cloning this repository. 
 ```
-python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps example-pkg-your-username
+cd ~
+git clone https://github.com/kcydesu/servo-pi.git
+cd servo_pi/servo_pi
 ```
+
+
 
 ## Usage
 In order to use this class you must first import it into your document. Then, you can instantiate a Servo object and provide the control pin as an argument. There is then a ```set_position(val)``` method that allows you move the servo.
