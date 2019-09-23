@@ -15,6 +15,7 @@ class Servo:
 
         self.pin = pin
 
+        GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BOARD)
         GPIO.setup(self.pin, GPIO.OUT)
         self.pwm = GPIO.PWM(pin, 100)
