@@ -13,12 +13,12 @@ class Servo:
         # Inputs:
         #   pin - Pin to control the servo with
 
-        self.pin = pin
+        self._pin = pin
 
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BOARD)
-        GPIO.setup(self.pin, GPIO.OUT)
-        self.pwm = GPIO.PWM(pin, 100)
+        GPIO.setup(self._pin, GPIO.OUT)
+        self.pwm = GPIO.PWM(self._pin, 100)
         self.pwm.start(5)
 
     def set_position(self, val):
@@ -29,7 +29,7 @@ class Servo:
         #   val - Position to set the servo to, a value between 0 - 180
 
         duty = float(val) / 10.0 + 2.5
-        self.pwm.ChangeDutyCycle(90)
-        time.sleep(1)
         self.pwm.ChangeDutyCycle(duty)
-        time.sleep(1)
+        time.sleep(0.01)
+        self.pwm.ChangeDutyCycle(duty)
+        time.sleep(0.01)
